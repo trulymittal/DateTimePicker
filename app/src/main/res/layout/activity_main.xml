@@ -22,6 +22,7 @@
 
     <Button
         android:id="@+id/dateButton"
+        style="@style/Widget.AppCompat.Button.Colored"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:text="get date"
@@ -34,6 +35,7 @@
 
     <Button
         android:id="@+id/timeButton"
+        style="@style/Widget.AppCompat.Button.Colored"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:text="get time"
