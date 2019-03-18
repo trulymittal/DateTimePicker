@@ -55,7 +55,7 @@ public class MainActivity extends AppCompatActivity {
         Calendar calendar = Calendar.getInstance();
         int YEAR = calendar.get(Calendar.YEAR);
         int MONTH = calendar.get(Calendar.MONTH);
-        final int DATE = calendar.get(Calendar.DATE);
+        int DATE = calendar.get(Calendar.DATE);
 
         DatePickerDialog datePickerDialog = new DatePickerDialog(this, new DatePickerDialog.OnDateSetListener() {
             @Override
