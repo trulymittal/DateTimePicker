@@ -5,6 +5,7 @@ import android.os.Bundle;
 import android.view.View;
 import android.widget.Button;
 import android.widget.TextView;
+import android.widget.Toast;
 
 public class MainActivity extends AppCompatActivity {
 
@@ -16,10 +17,10 @@ public class MainActivity extends AppCompatActivity {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_main);
 
-        dateButton.findViewById(R.id.dateButton);
-        timeButton.findViewById(R.id.timeButton);
-        dateTextView.findViewById(R.id.dateTextView);
-        timeTextView.findViewById(R.id.timeTextView);
+        dateButton = findViewById(R.id.dateButton);
+        timeButton = findViewById(R.id.timeButton);
+        dateTextView = findViewById(R.id.dateTextView);
+        timeTextView = findViewById(R.id.timeTextView);
 
         dateButton.setOnClickListener(new View.OnClickListener() {
             @Override
@@ -36,9 +37,11 @@ public class MainActivity extends AppCompatActivity {
     }
 
     private void handleTimeButton() {
+        Toast.makeText(this, "handleTimeButton", Toast.LENGTH_SHORT).show();
     }
 
     private void handleDateButton() {
+        Toast.makeText(this, "handleDateButton", Toast.LENGTH_SHORT).show();
     }
 
 
